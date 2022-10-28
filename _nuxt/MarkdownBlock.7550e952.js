@@ -1,0 +1,1 @@
+import n from"./ContentSlot.4a7c011f.js";import{a as t,o as r,b as c,e as s}from"./entry.728302d1.js";const a={};function l(e,_){const o=n;return r(),c("pre",null,[s(o,{use:e.$slots.default,unwrap:"p"},null,8,["use"])])}const u=t(a,[["render",l]]);export{u as default};
