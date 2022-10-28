@@ -1,0 +1,26 @@
+{
+  "name": "condorhero.me",
+  "private": true,
+  "description": "My personal website powered by [content-wind](https://content-wind.nuxt.space/)",
+  "scripts": {
+    "dev": "nuxi dev",
+    "i": "npm install",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "postinstall": "nuxi prepare"
+  },
+  "devDependencies": {
+    "content-wind": "^0.2.4",
+    "nuxt": "3.0.0-rc.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/condorheroblog/condorhero.me.git"
+  },
+  "author": "CondorHero",
+  "bugs": {
+    "url": "https://github.com/condorheroblog/condorhero.me/issues"
+  },
+  "homepage": "https://github.com/condorheroblog/condorhero.me#readme"
+}
