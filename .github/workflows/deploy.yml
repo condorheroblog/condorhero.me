@@ -21,8 +21,11 @@ jobs:
 
       - name: Generate Pages
         run: npm run generate
+        # set baseURL to repository name [condorhero.me]
+        # https://v3.nuxtjs.org/api/composables/use-runtime-config#appbaseurl
+        env:
+          NUXT_APP_BASE_URL: /${{ github.event.repository.name }}
 
-      # Deploying a subfolder to GitHub Pages - Relative Links Fail
       # https://github.com/vercel/next.js/issues/2029
       - name: Add .nojekyll file
         run: touch .output/public/.nojekyll
