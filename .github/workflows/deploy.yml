@@ -22,8 +22,13 @@ jobs:
       - name: Generate Pages
         run: npm run generate
 
+      # Deploying a subfolder to GitHub Pages - Relative Links Fail
+      # https://github.com/vercel/next.js/issues/2029
+      - name: Add .nojekyll file
+        run: touch .output/public/.nojekyll
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          folder: ./dist
+          folder: .output/public/
