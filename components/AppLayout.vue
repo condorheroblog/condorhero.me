@@ -40,7 +40,7 @@ const formatDate = (dateStr: string) => {
           </template>
         </ContentRenderer>
         <div class="text-gray-400">
-          <span>{{page.lastmod ? `文章已于${formatDate(page.lastmod)}修改` : null }}</span>
+          <span>{{page.lastmod ? `文章已于 ${formatDate(page.lastmod)} 修改 ` : null }}</span>
           <span v-for="tag in page.tags">#{{ tag }}&nbsp;</span>
         </div>
       </NuxtLayout>

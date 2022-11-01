@@ -1,5 +1,6 @@
 ---
-date: 2022-10-28T14:29:54.000+00:00
+date: 2022-10-28T06:29:54.000Z
+lastmod: 2022-11-01T09:23:29.927Z
 author: CondorHero
 duration: 1min
 tags: [hello, world]

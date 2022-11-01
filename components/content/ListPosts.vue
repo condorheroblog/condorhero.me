@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const getYear = (a: Date | string | number) => new Date(a).getFullYear()
+const isSameYear = (a: Date | string | number, b: Date | string | number) => a && b && getYear(a) === getYear(b)
 </script>
 <template>
 
@@ -11,9 +13,17 @@
         </h3>
       </template>
 
-      <NuxtLink v-else class="block font-normal mb-6 mt-2 no-underline" v-for="route in posts" :key="route._path"
-        :to="route._path">
-        <li v-if="route._path !== `/${$route.params.slug[0]}`" class="no-underline">
+      <NuxtLink
+        v-else
+        class="block font-normal mb-6 mt-2 no-underline"
+        v-for="route, idx in posts.filter(i => i.date).sort((a, b) => +new Date(b.date) - +new Date(a.date))"
+        :key="route._path"
+        :to="route._path"
+      >
+        <div v-if="!isSameYear(route.date, posts[idx - 1]?.date)" class="relative h-20 pointer-events-none">
+          <span class="text-9xl absolute left--12 top--8 font-bold text-zinc-200">{{ getYear(route.date) }}</span>
+        </div>
+        <li v-if="route._path !== `/${$route.params.slug[0]}`" class="no-underline relative">
           <div class="text-lg leading-1.2">
             <span v-if="route.lang === 'en'"
               class="text-xs border border-current rounded px-1 pb-0.2 mr-2 align-middle">English</span>
