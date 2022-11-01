@@ -1,4 +1,4 @@
-# [CondorHero](https://condorhero.github.io/)
+# [CondorHero](https://condorheroblog.github.io/condorhero.me/)
 
 My personal website powered by [content-wind](https://content-wind.nuxt.space/)
 
