@@ -33,6 +33,7 @@ const formatDate = (dateStr: string) => {
         <div class="absolute top-20 mt-1 text-sm text-gray-400">
           <span class="mr-2">{{ page.author }}</span>
           <span>{{ formatDate(page.date) }}</span>
+          <span>{{ page.duration ? `&nbsp;·&nbsp;${page.duration}` : null }}</span>
         </div>
         <ContentRenderer v-if="page" :key="page._id" :value="page">
           <template #empty="{ value }">

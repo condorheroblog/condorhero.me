@@ -11,8 +11,8 @@
     "postinstall": "nuxi prepare"
   },
   "devDependencies": {
-    "content-wind": "^0.2.4",
-    "nuxt": "3.0.0-rc.12"
+    "content-wind": "^0.2.8",
+    "nuxt": "3.0.0-rc.13"
   },
   "repository": {
     "type": "git",

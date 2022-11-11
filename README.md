@@ -23,3 +23,7 @@ powered by [Nuxt Content](https://content.nuxtjs.org), [TailwindCSS](https://tai
 - Deploy on any Node or Static hosting: GH Pages, Vercel, Netlify, Heroku, etc.
 
 Learn more on https://github.com/Atinux/content-wind
+
+## [auto-front-matter](https://github.com/condorheroblog/auto-front-matter)
+
+a VS Code plugin, Automatically insert lastmod/duration in front-matter when you save an md file.
