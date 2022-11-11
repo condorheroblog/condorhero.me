@@ -1,0 +1,1 @@
+import{q as s,o as a,b as o,i as t,s as r}from"./entry.96755f80.js";const n={},_={class:"max-w-2xl px-4 py-10 m-auto bg-white sm:px-8 sm:shadow dark:bg-primary-800 sm:rounded"},c={class:"prose prose-gray dark:prose-invert max-w-none"};function d(e,l){return a(),o("div",_,[t("main",c,[r(e.$slots,"default")])])}const m=s(n,[["render",d]]);export{m as default};
